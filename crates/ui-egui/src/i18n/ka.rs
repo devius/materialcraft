@@ -249,7 +249,7 @@ pub const TABLE: &[(&str, &str)] = &[
     ("Equal", "ტოლია"),
     ("Exit", "გასვლა"),
     ("Expected output", "მოსალოდნელი გამოსატანი"),
-    ("Explorer", "მკვლევარი"),
+    ("Explorer", "პაკეტების ხე"),
     ("Exponential", "ექსპონენტა"),
     ("Export", "ექსპორტირება"),
     ("Export material...", "მასალის ექსპორტირება..."),
