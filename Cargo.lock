@@ -2948,6 +2948,7 @@ dependencies = [
  "base64 0.22.1",
  "craft-atomic",
  "craft-dialogs",
+ "craft-fonts-build",
  "craft-keymap",
  "craft-quit",
  "craft-ui",
