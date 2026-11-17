@@ -9,8 +9,8 @@ so catalogs can be added without touching callers. Today only English ships.
 |---|---|---|---|
 | English | `en` | Complete | Source language |
 | Arabic | `ar` | Complete | Full UI translation table (`crates/ui-egui/src/i18n/ar.rs`), system font fallbacks (Segoe UI / SF Arabic / Noto Sans Arabic), live language picker in Preferences |
+| Georgian | `ka` | Complete | Full UI translation table (`crates/ui-egui/src/i18n/ka.rs`), live language picker in Preferences; Noto Sans Georgian from craft-fonts (`CRAFT_FONTS_DIR`, desktop and web) or system fonts on desktop |
 | French, German, Spanish, Portuguese (Brazil), Italian | `fr`, `de`, `es`, `pt-br`, `it` | Not started | Planned with the shared craft-i18n catalogs |
-| Georgian | `ka` | Font only | Noto Sans Georgian from craft-fonts (`CRAFT_FONTS_DIR`, desktop and web) or system fonts on desktop; the catalog follows |
 | Japanese, Chinese (Simplified), Korean | `ja`, `zh-hans`, `ko` | Not started | Needs the craft-fonts CJK faces (`CRAFT_FONTS_DIR`), as in TextureCraft |
 
 ## Fonts for Arabic and Georgian
@@ -32,6 +32,6 @@ A browser page can't read system fonts, so on the web Georgian draws only in bui
 
 | Date | Change | Summary |
 |---|---|---|
-| 2026-11-17 | minor | Georgian UI font: Noto Sans Georgian embedded from craft-fonts (desktop and web), system fallbacks; no catalog yet |
+| 2026-11-17 | minor | Add complete Georgian (`ka`) UI localization; Noto Sans Georgian embedded from craft-fonts (desktop and web), system fallbacks |
 | 2026-11-03 | minor | Add complete Arabic (`ar`) UI localization and font fallbacks |
 | 2026-11-02 | major | First version |
