@@ -21,7 +21,7 @@ picker) is open:
 
 1. **craft-fonts** (Georgian): `crates/ui-egui/build.rs` embeds Noto Sans Georgian Regular (0.23 MB) from
    `CRAFT_FONTS_DIR/fonts/manifest.txt`, verified against its checksum, in native and web builds.
-   `CRAFT_FONTS_REQUIRED=1` makes it mandatory (releases); otherwise a missing checkout only warns.
+   `CRAFT_FONTS_REQUIRED=1` makes it mandatory (releases). Without `CRAFT_FONTS_DIR` the face is simply left out (as for the SBS fallback font); a checkout that is set but unusable warns.
 2. **System fonts** on desktop. Arabic: Segoe UI / Tahoma / Arial, SF Arabic / Geeza Pro, Noto Sans Arabic
    or DejaVu Sans. Georgian: Sylfaen / Segoe UI, SF Georgian / Noto Sans Georgian, Noto Sans Georgian or
    DejaVu Sans.

@@ -26,6 +26,8 @@ fn checkout_file(root: &Path, relative: &str) -> Result<PathBuf> {
     if relative.is_empty() || relative.contains(['\\', ':']) || !Path::new(relative).components().all(|part| matches!(part, Component::Normal(_))) {
         return Err("font manifest path is not checkout-relative".into());
     }
+    // Registered before canonicalize() can fail, so a file added later reruns the script.
+    println!("cargo::rerun-if-changed={}", root.join(relative).display());
     let path = root.join(relative).canonicalize()?;
     if !path.starts_with(root) {
         return Err("font manifest path escapes the checkout".into());
